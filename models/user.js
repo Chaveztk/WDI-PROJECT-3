@@ -26,8 +26,8 @@ userSchema.set('toJSON', {
 
 
 userSchema.virtual('passwordConfirmation')
-  .set(function setPasswordConfirmation(passwordConfrimation){
-    this._passwordConfirmation = passwordConfrimation;
+  .set(function setPasswordConfirmation(passwordConfirmation){
+    this._passwordConfirmation = passwordConfirmation;
   });
 
 userSchema.pre('validate', function checkPasswordMatch(next){
